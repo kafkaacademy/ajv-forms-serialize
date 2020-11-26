@@ -110,7 +110,7 @@ Lets serialize the following html form:
 ```
 
 ```js
-const serialize = require('ajv-forms-serialize');
+import {serialize} from 'ajv-forms-serialize';
 var form = document.querySelector('#example-form');
 
 var str = serialize(form);
@@ -191,7 +191,7 @@ var str = serialize(form);
 or you can import using:
 
 ```
-const serialize=require('ajv-forms-serialize');
+import {serialize} from 'ajv-forms-serialize';
 ```
 
 ### indexed arrays
@@ -209,7 +209,7 @@ Like the "[explicit array fields](explicit-array-fields)" this does not affect u
 ```
 
 ```js
-var serialize = require('ajv-forms-serialize');
+import {serialize} from 'ajv-forms-serialize';
 var form = document.querySelector('#todos-form');
 
 var obj = serialize(form, { hash: true });
@@ -234,7 +234,7 @@ Like the "[explicit array fields](explicit-array-fields)" this does not affect u
 ```
 
 ```js
-var serialize = require('ajv-forms-serialize');
+import {serialize} from 'ajv-forms-serialize';
 var form = document.querySelector('#todos-form');
 
 var obj = serialize(form, { hash: true });
