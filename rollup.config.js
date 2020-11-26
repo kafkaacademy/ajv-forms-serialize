@@ -9,18 +9,10 @@ const production = !process.env.ROLLUP_WATCH
 
 export default {
     input: 'src/index.mjs',
-    output: [
+    output: [      
         {
-            file: `${dist}/${bundle}.cjs.js`,
-            format: 'cjs'
-        },
-        {
-            file: `${dist}/${bundle}.esm.js`,
+            file: `${dist}/${bundle}.esm.mjs`,
             format: 'esm'
-        }, {
-            name : 'ajv-forms',
-            file: `${dist}/${bundle}.umd.js`,
-             format: 'umd'
         }
     ],
     "plugins":[
@@ -31,7 +23,7 @@ export default {
         string({
             include:  '**/*.css'
         })
-   //     ,production && terser()
+        ,production && terser()
     ]
 
 }

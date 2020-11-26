@@ -2,8 +2,9 @@
   "name": "ajv-forms-serialize",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
+  "type": "module",
+  "main": "dist/bundle.esm.mjs",
+  "module": "dist/bundle.esm.mjs",
   "sideEffects": false,
   "scripts": {
     "clean": "rimraf dist",

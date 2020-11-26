@@ -1,4 +1,5 @@
 # ajv-forms-serialize
+Sorry we support ES6, and not older standards!!
 
 Improvements compared to [form-serialize](https://www.npmjs.com/package/form-serialize) (forked from there) 
 
